@@ -22,9 +22,16 @@ we only show navbar if admin panel is not open
 
 7. scrollTo(0,0)  => top par avi jay
 
+8. let we create the login functionality for this we use clerk.
+Authentication using CLERK. (create account in clerk and create app inside that and follow react steps).
 
+9. we use useUser() to check the user is login or not.
+- we use the userCleark for adding Buttons.
+- if user is not login we normal show our login buttton but if we are loging then we show user icon.
+if we click on user icon it has two option manage account and signout.
+- but we can able to add other options also using `UserButton.MenuItems` component and inside this component we also show one other component is UserButton.Action component.
 
-
+- UserButton.Action contains props like label ,label icon , onclick for where to redirect after clicking.
 
 
 
