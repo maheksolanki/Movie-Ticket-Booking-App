@@ -33,6 +33,9 @@ if we click on user icon it has two option manage account and signout.
 
 - UserButton.Action contains props like label ,label icon , onclick for where to redirect after clicking.
 
+10. next we create the Hero section this component is mount inside the Home component.
+
+
 
 
 
