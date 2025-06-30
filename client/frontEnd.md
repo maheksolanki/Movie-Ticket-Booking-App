@@ -37,11 +37,18 @@ if we click on user icon it has two option manage account and signout.
 
 11. we use useNavigate Hook of router for moving one page to other page.
 
-12. next create the FeaturedSection component this is for show movie cards
+12. next create the FeaturedSection component this is for show movie cards and show more buttons feature.
 
 13. In this backgrand has gradient colors and that use multiple time so that we create separate component for that it's name is BlurCircle.
 
-14. 
+14. next create the movie card component that add inside the featured component
+all the  data in movie card that comed from assets.js file this file contains the dummy data.
+
+15. next create the tailer section component that show the some movie trailer videos using react.
+for showing the video we use the ReactPlayer.
+When you provide a YouTube URL to ReactPlayer, it automatically Extracts the video thumbnail from YouTube's servers or from youtube image url we can not give externally thubnail image.
+
+16. we have not write the code for footer we use pre built.com website and get pre built footer from there.
 
 
 
