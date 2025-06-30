@@ -50,6 +50,9 @@ When you provide a YouTube URL to ReactPlayer, it automatically Extracts the vid
 
 16. we have not write the code for footer we use pre built.com website and get pre built footer from there.
 
+17. let next create movie list in movie component.
+
+
 
 
 

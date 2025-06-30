@@ -9,7 +9,8 @@ const MovieCard = ({ movie }) => {
     <div className="flex flex-col justify-between p-3 bg-gray-800 rounded-2xl hover:-translate-y-1 transition duration-300 w-66">
       <img
         onClick={() => {
-          navigate(`/movies/${movie._id}`);
+          // ahi thi apde url ni andar movie ni id send kari ae chhe jeni help thi apde particular movie ni details get kariye chhe
+          navigate(`/movies/${movie._id}`); 
           scrollTo(0, 0);
         }}
         src={movie.backdrop_path}
