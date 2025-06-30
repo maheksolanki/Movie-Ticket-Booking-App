@@ -33,8 +33,15 @@ if we click on user icon it has two option manage account and signout.
 
 - UserButton.Action contains props like label ,label icon , onclick for where to redirect after clicking.
 
-10. next we create the Hero section this component is mount inside the Home component.
+10. next we create the HeroSection this component is mount inside the Home component.
 
+11. we use useNavigate Hook of router for moving one page to other page.
+
+12. next create the FeaturedSection component this is for show movie cards
+
+13. In this backgrand has gradient colors and that use multiple time so that we create separate component for that it's name is BlurCircle.
+
+14. 
 
 
 
@@ -77,6 +84,15 @@ border-gray-300/20      → border-color: rgba(209, 213, 219, 0.2);
 overflow-hidden         → overflow: hidden;
 transition-[width]      → transition: width;
 duration-300            → transition-duration: 300ms;
+md:px-16	               ≥768px	
+lg:px-24	               ≥1024px
+xl:px-44	               ≥1280px
+pt -> padding top
+pb -> padding bottom 
 
 
-
+| Value          | Position Relative to Right Edge | Moves Element |
+| -------------- | ------------------------------- | ------------- |
+| `right: 0`     | Exactly on right edge           | –             |
+| `right: 80px`  | 80px **inside** from right      | Left ⬅        |
+| `right: -80px` | 80px **outside** to the right   | Right ➡       |
