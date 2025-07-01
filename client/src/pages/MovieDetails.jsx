@@ -6,6 +6,7 @@ import { Heart, PlayCircleIcon, StarIcon } from "lucide-react";
 import timeFormate from "../lib/timeFormate";
 import DateSelect from "../components/DateSelect";
 import MovieCard from "../components/MovieCard";
+import Loading from "../components/Loading";
 
 const MovieDetails = () => {
 
@@ -92,7 +93,9 @@ const MovieDetails = () => {
           ))}
         </div>
       </div>
+      {/* this is component that select the date and when click book ticket button go to the seat layout page */}
       <DateSelect dateTime={show.dateTime} id={id} />
+
       <p className="text-lg font-medium mt-20 mb-8">You May Also Like</p>
       <div className="flex flex-wrap max-sm:justify-center gap-8">
         {dummyShowsData.slice(0,4).map((movie,index) =>(
@@ -104,7 +107,9 @@ const MovieDetails = () => {
       </div>
     </div>
   ) : (
-    <div>Loading..</div>
+    <div>
+      <Loading/>
+    </div>
   );
 };
 

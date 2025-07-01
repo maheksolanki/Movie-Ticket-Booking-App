@@ -20,7 +20,7 @@ we only show navbar if admin panel is not open
 6. XIcon - this is use for showing cross icon it is from lucide icons
 - MenuIcon,Search : this both from lucide icons
 
-7. scrollTo(0,0)  => top par avi jay
+7. scrollTo(0,0)  => scroll the page to the top
 
 8. let we create the login functionality for this we use clerk.
 Authentication using CLERK. (create account in clerk and create app inside that and follow react steps).
@@ -42,7 +42,7 @@ if we click on user icon it has two option manage account and signout.
 13. In this backgrand has gradient colors and that use multiple time so that we create separate component for that it's name is BlurCircle.
 
 14. next create the movie card component that add inside the featured component
-all the  data in movie card that comed from assets.js file this file contains the dummy data.
+all the  data in movie card that comes from assets.js file this file contains the dummy data.
 
 15. next create the tailer section component that show the some movie trailer videos using react.
 for showing the video we use the ReactPlayer.
@@ -50,7 +50,23 @@ When you provide a YouTube URL to ReactPlayer, it automatically Extracts the vid
 
 16. we have not write the code for footer we use pre built.com website and get pre built footer from there.
 
-17. let next create movie list in movie component.
+17. let next create movie page and to this page we transfer from the fetured component that has button show more. 
+when click the show more button we go to the movie page that show the list of the movie.
+
+18. from the movie page  call the movieCard component which show the perticular card.
+
+19. when we click to the particular card image we transfer to the movie detail page.
+ movie detail page contains many sections top of the page show the particular movie details.
+
+ that contains two button watch tailar and buy tickt .
+ when we click the buy ticket it scroll the page to next section that is show date .
+ for showing the date we call componenet date select.
+
+ date select contais dummy dates and one button buy ticket.
+ when click to the buy ticket button we transfer to the seatLayout page.
+
+ 20. seatlayout page contains the timing in one left side and right side contais available seats.
+
 
 
 

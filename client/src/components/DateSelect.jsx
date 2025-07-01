@@ -13,7 +13,7 @@ const DateSelect = ({ dateTime, id }) => {
     if(!selected){
       return toast('please select a date');
     }
-    navigate(`/movies/${id}/${selected}`)
+    navigate(`/movies/${id}/${selected}`) // this is go to the page seat layout.
     scrollTo(0,0);
   }
 

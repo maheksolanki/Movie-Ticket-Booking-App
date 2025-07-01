@@ -11,6 +11,7 @@ const MovieCard = ({ movie }) => {
         onClick={() => {
           // ahi thi apde url ni andar movie ni id send kari ae chhe jeni help thi apde particular movie ni details get kariye chhe
           navigate(`/movies/${movie._id}`);
+          // from here we transfer to movie detail page
           scrollTo(0, 0);
         }}
         src={movie.backdrop_path}
