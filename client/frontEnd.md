@@ -57,6 +57,7 @@ When you provide a YouTube URL to ReactPlayer, it automatically Extracts the vid
 
 
 
+
 ## tailwind
  - tailwind px- padding horizontal , py- padding vertical
  - w-full => width 100%
@@ -99,6 +100,11 @@ lg:px-24	               ≥1024px
 xl:px-44	               ≥1280px
 pt -> padding top
 pb -> padding bottom 
+
+active: → This is a state variant. It applies the style when the element is actively being clicked
+scale-95 → This means the element is scaled down to 95% of its original size using CSS transform: scale(0.95).
+
+aspect-square	Ensures the element is always a perfect square.
 
 
 | Value          | Position Relative to Right Edge | Moves Element |

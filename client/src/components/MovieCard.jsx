@@ -10,7 +10,7 @@ const MovieCard = ({ movie }) => {
       <img
         onClick={() => {
           // ahi thi apde url ni andar movie ni id send kari ae chhe jeni help thi apde particular movie ni details get kariye chhe
-          navigate(`/movies/${movie._id}`); 
+          navigate(`/movies/${movie._id}`);
           scrollTo(0, 0);
         }}
         src={movie.backdrop_path}
@@ -20,21 +20,14 @@ const MovieCard = ({ movie }) => {
 
       <p className="font-semibold mt-2 truncate">{movie.title}</p>
       <p className="text-sm text-gray-400 mt-2">
-        {new Date(movie.release_date).getFullYear()}{" "}
-        <Dot
-          size={6}
-          strokeWidth={10}
-          className="inline align-middle p-0 m-0 w-[6px] h-[6px]"
-        />{" "}
+        {new Date(movie.release_date).getFullYear()}
+        {/* this span tag use for dot only for styling purpose */}
+        <span style={{ fontSize: "10px", marginInline: "2.5px" }}>●</span>
         {movie.genres
           .slice(0, 2)
           .map((genre) => genre.name)
-          .join(" | ")}{" "}
-        <Dot
-          size={7}
-          strokeWidth={10}
-          className="inline align-middle p-0 m-0 w-[6px] h-[6px]"
-        />{" "}
+          .join(" | ")}
+        <span style={{ fontSize: "10px", marginInline: "2.5px" }}>●</span>
         {timeFormate(movie.runtime)}
       </p>
 
