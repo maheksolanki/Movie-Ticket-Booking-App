@@ -65,7 +65,10 @@ when click the show more button we go to the movie page that show the list of th
  date select contais dummy dates and one button buy ticket.
  when click to the buy ticket button we transfer to the seatLayout page.
 
- 20. seatlayout page contains the timing in one left side and right side contais available seats.
+ 20. seatlayout page contains the timing in one left side and right side contais seats.
+ it also contains the proceed to checkout button when we click on that it asked for payment and if payment is completed then redirect the page to the my-booking page.
+
+ 21. next create the my-booking page.
 
 
 
