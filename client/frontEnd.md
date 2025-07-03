@@ -80,6 +80,9 @@ when click the show more button we go to the movie page that show the list of th
  24. lets create the layout page.
  in layout page we use the **Outlet** component that import from react-router-dom use to render all child route.
 
+ 25. next crete the Admin Navbar
+ 
+
 
 
 
@@ -140,3 +143,25 @@ aspect-square	Ensures the element is always a perfect square.
 | `right: 0`     | Exactly on right edge           | –             |
 | `right: 80px`  | 80px **inside** from right      | Left ⬅        |
 | `right: -80px` | 80px **outside** to the right   | Right ➡       |
+
+
+ 🔹 1. Min-width Breakpoints (sm:, md:, lg:, etc.)
+These apply at and above the specified width.
+
+Prefix	Meaning	Width ≥
+sm:	Small devices	640px
+md:	Medium devices	768px
+lg:	Large devices	1024px
+xl:	Extra large devices	1280px
+2xl:	Extra-extra large	1536px
+
+
+🔹 2. Max-width Breakpoints (max-sm:, max-md:, etc.)
+These apply below or equal to the specified width.
+
+Prefix	Meaning	Width ≤
+max-sm:	For screens ≤ 640px	
+max-md:	For screens ≤ 768px	
+max-lg:	For screens ≤ 1024px	
+max-xl:	For screens ≤ 1280px	
+max-2xl:	For screens ≤ 1536px
