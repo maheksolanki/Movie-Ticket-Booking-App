@@ -68,8 +68,17 @@ when click the show more button we go to the movie page that show the list of th
  20. seatlayout page contains the timing in one left side and right side contais seats.
  it also contains the proceed to checkout button when we click on that it asked for payment and if payment is completed then redirect the page to the my-booking page.
 
- 21. next create the my-booking page.
+ 21. next create the my-booking page. 
+ In my booking page we show the booked movie image , date, time , amount .
+ if the amount is not paid then we show pay Now button
 
+ 22. lets create **Admin** pages.
+ first create the Admin folder in pages folder and then next create the pages like AddShow , Dashboard , layout, listbookings , listshows
+
+ 23. next we add the rout in app.jsx file in rout we add path like this /admin/* means for all admin paths shows the same layout.
+
+ 24. lets create the layout page.
+ in layout page we use the **Outlet** component that import from react-router-dom use to render all child route.
 
 
 
