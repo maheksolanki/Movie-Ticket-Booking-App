@@ -20,7 +20,7 @@ app.use(clerkMiddleware())
 app.get('/',(req,res)=>{
   res.send("server is Live!");
 })
-app.use('/api/inngest',serve({ client: inngest, functions })) // api endpoin for inngest
+app.use('/api/inngest',serve({ client: inngest, functions ,signingKey: process.env.INGGEST_SIGNING_KEY, })) // api endpoin for inngest
 
 app.listen(port , ()=>{
   console.log(`server running on port ${port}`);
