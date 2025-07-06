@@ -24,7 +24,7 @@ app.use(
   "/api/inngest",
   serve({
     client: inngest,
-    signingKey: process.env.INNGEST_SIGNING_KEY,
+    signingKey: process.env.INGGEST_SIGNING_KEY,
     functions,
     resync: true,
   })
