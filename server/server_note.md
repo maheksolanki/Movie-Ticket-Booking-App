@@ -24,4 +24,12 @@ req.body = {
   age: 21
 };
 Now your backend can easily use req.body.name and req.body.age.
-4. 
+
+4. next we go to the mongodb site and in this go to the cluster -> driver -> copy uri.
+5.  next we create the user schema in model folder.
+for create schema we use Schema constructor.
+then create function based on schema using model.
+and export this function for usage.
+
+6. In frontend we send the data to the clerk so that we also setup clerk in backend.
+
