@@ -33,3 +33,7 @@ and export this function for usage.
 
 6. In frontend we send the data to the clerk so that we also setup clerk in backend.
 
+our login data is send to the clerk so we need to retrive this data and save to db.
+for that we use inngest that runs in backgroud and handle the jobs.
+
+we have write the function to save data inside the inngest folder index.js file.
