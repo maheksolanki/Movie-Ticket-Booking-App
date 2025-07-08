@@ -37,3 +37,29 @@ our login data is send to the clerk so we need to retrive this data and save to 
 for that we use inngest that runs in backgroud and handle the jobs.
 
 we have write the function to save data inside the inngest folder index.js file.
+(give some info about inngest also plz)
+
+7. next we create the model or the schema  for movie.
+it contains the property like 
+  id,title,overview
+  poster_path
+  backdrop_path
+  release_date
+  original_language
+  tagline:
+  genres
+  casts
+  vote_average
+  runtime
+8. next create the model for shows. that contains bellow property
+movie , showDateTime ,showPrice ,occupiedSeats
+
+9. let's next we creat the api for geting currenct palying movie from tmdb(the movie data base) this is third party that give us movies. so we login in TMDB and get api to access movies from that site.
+
+our first api is 
+http://localhost:3000/api/show/now-playing
+this run successfully mean get current playing movie.
+
+let next we add this getting movie on front end add movie in admin panel.
+
+10. for the adding movie we need other controller or routes that add this getting movies.

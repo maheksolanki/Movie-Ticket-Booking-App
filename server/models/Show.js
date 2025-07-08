@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 const showSchema = new mongoose.Schema({
-  movie : {type : String , required : true , ref : 'Movie'}, // this take the reference of movie
+  movie : {type : String , required : true , ref : 'Movie'}, // this take the reference of movie model
   showDateTime : {type : Date , required : true},
   showPrice : {type : Number , required : true},
   occupiedSeats  :{type : Object , default : {}},
