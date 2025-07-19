@@ -8,11 +8,10 @@ npm init -y
   - cors :  Middleware in Express to allow Cross-Origin Requests, e.g., React app calling a Node.js API on a different port.
   - dotenv : To load environment variables from a .env file (e.g., DB password, API key) into process.env.
   - express : A fast web framework for Node.js to build backend APIs.
-  - nodemon : for dect the chnages.
+  - nodemon : for detect the chnages.
 
 Note : Parsing means "converting" something from one format into a structure your code can understand.
 3. When the frontend sends this JSON to the backend:
-Edit
 {
   "name": "Mahek",
   "age": 21
@@ -63,3 +62,17 @@ this run successfully mean get current playing movie.
 let next we add this getting movie on front end add movie in admin panel.
 
 10. for the adding movie we need other controller or routes that add this getting movies.
+
+for add movie api is :
+http://localhost:3000/api/show/add
+
+11. next we crete the api to get all movie from db 
+http://localhost:3000/api/show/all
+
+12. and then to get particular movie with parameter id then 
+http://localhost:3000/api/show/749170
+
+13. Let next we crate the Booking Model and controller for api.
+
+14. Here in this application we use Stripe for payment gateway
+- payment gatewate is initialize in bookingSeats controller.
