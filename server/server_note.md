@@ -107,3 +107,7 @@ The movie: "abc123" will be replaced by the actual movie object, like this:
     "duration": 148
   }
 }  
+
+15. after creating all api we move to the frontend to use this api.
+fot this we install axios in frontend to get and post the data from or to backend.
+and create one context file to access variable and state globally.
