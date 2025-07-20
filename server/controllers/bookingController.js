@@ -19,7 +19,7 @@ const checkSeatsAvailability = async(showId,selectedSeats) => {
   }
 }
 
-//Using this function user can booked new show if seat is awailable.
+//2. Using this function user can booked new show if seat is awailable.
 
 export const createBooking = async (req,res) => {
   try{
@@ -59,4 +59,17 @@ export const createBooking = async (req,res) => {
     res.json({success : false , message : err.message});
   }
 }
-// get The occupied seat data 
+//3. get The occupied seat data 
+export const getOccupiedSeats = async (req,res) => {
+  try{
+    const {showId} = req.params;
+    const showData = await Show.findById(showId);
+
+    const occupiedSeats = Object.keys(showData.occupiedSeats);
+    res.json({success : true , occupiedSeats});
+
+  }catch(err){
+   console.log(err.message);
+    res.json({success : false , message : err.message}); 
+  }
+}

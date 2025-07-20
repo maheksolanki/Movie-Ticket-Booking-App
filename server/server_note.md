@@ -76,3 +76,34 @@ http://localhost:3000/api/show/749170
 
 14. Here in this application we use Stripe for payment gateway
 - payment gatewate is initialize in bookingSeats controller.
+
+Note : .populate() method => this method replace the field with actual Collection
+means in one Collection constains only movie id but we also create the movie Collection that contains all details of movie so we replace movie id with actual movie Collection.
+
+Ex : 
+1. Movie collection (movies)
+{
+  "_id": "abc123",
+  "title": "Inception",
+  "duration": 148
+}
+2. Show collection (shows)
+{
+  "_id": "xyz789",
+  "showDateTime": "2025-07-21T19:00:00",
+  "movie": "abc123"  // this is just an ID from the movie collection
+}
+When you run:
+
+`Show.find().populate('movie')`
+The movie: "abc123" will be replaced by the actual movie object, like this:
+
+{
+  "_id": "xyz789",
+  "showDateTime": "2025-07-21T19:00:00",
+  "movie": {
+    "_id": "abc123",
+    "title": "Inception",
+    "duration": 148
+  }
+}  
